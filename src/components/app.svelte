@@ -1,8 +1,15 @@
 <App { ...f7params }>
 
   <!-- Your main view, should have "view-main" class -->
-  <View main class="safe-areas" url="/" />
-
+  <Views tabs>
+    <View id="tab-1" main tab tabActive url="/"/>
+    <View id="tab-3" tab url="/settings/c"/>
+    <Toolbar tabbar icons bottom>
+      <Link tabLink="#tab-1" tabLinkActive text="Home" iconIos="f7:envelope_fill" iconMd="material:home"/>
+      <Link tabLink="#tab-2" text="Tab 2" iconIos="f7:calendar_fill" iconMd="material:today" />
+      <Link tabLink="#tab-3" text="Settings" iconIos="f7:cloud_upload_fill" iconMd="material:settings"/>
+    </Toolbar>
+  </Views>
 </App>
 <script>
   import { onMount } from 'svelte';
@@ -12,6 +19,9 @@
     f7ready,
     App,
     View,
+    Toolbar,
+    Link,
+    Views
   } from 'framework7-svelte';
 
 
