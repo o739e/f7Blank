@@ -6,10 +6,10 @@ var routes = [
     path: "/",
     component: HomePage,
   },
-  // {
-  //   path: "/settings/",
-  //   component: SettingsPage,
-  // },
+  {
+    path: "/settings/",
+    component: SettingsPage,
+  },
   {
     path: "/settings/:setting/",
     component: SettingsPage,
