@@ -3,6 +3,7 @@
   <!-- Your main view, should have "view-main" class -->
   <Views tabs>
     <View id="tab-1" main tab tabActive url="/"/>
+    <View id="tab-2" main tab tabActive url="/settings/theme/"/>
     <View id="tab-3" tab url="/settings/"/>
     <Toolbar tabbar icons bottom>
       <Link tabLink="#tab-1" tabLinkActive text="Home" iconIos="f7:envelope_fill" iconMd="material:home"/>
