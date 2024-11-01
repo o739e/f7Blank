@@ -5,6 +5,8 @@
     <AllSettings/>
   {:else if f7route.params.setting == "theme"}
     <ThemeSelector/>
+  {:else if f7route.params.setting == "background"}
+    <BackgroundSelector/>
   {/if}
 </Page>
 <script>
@@ -13,6 +15,7 @@
   );
   import AllSettings from './settings/AllSettings.svelte';
   import ThemeSelector from './settings/ThemeSelector.svelte';
+  import BackgroundSelector from './settings/BackgroundSelector.svelte';
   import {
     f7,
     Page,
